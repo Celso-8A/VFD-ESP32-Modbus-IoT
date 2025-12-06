@@ -1,0 +1,53 @@
+[
+    {
+        "id": "8bb2bf7e64f9c110",
+        "type": "ui_template",
+        "z": "2cd605c4085c8a9d",
+        "group": "ui_group_cnc",
+        "name": "",
+        "order": 28,
+        "width": 24,
+        "height": 1,
+        "format": "<!-- =========================================\n     DISEÑO PROFESIONAL PARA DASHBOARD VFD\n     Estilo SCADA / DARK INDUSTRIAL\n========================================= -->\n\n<style>\n    /* =========================================\n         PALETA DE COLORES\n   ========================================= */\n    :root {\n        --bg-main: #4f4f4f;\n        --bg-panel: #242424;\n        --bg-card: #2b2b2b;\n        --text-main: #e8e8e8;\n        --text-muted: #b5b5b5;\n\n        --accent-blue: #00d0ff;\n        --accent-green: #8cc63f;\n        --accent-red: #ff4444;\n        --accent-orange: #ffb347;\n    }\n\n    /* =========================================\n         FONDO GENERAL\n   ========================================= */\n    .nr-dashboard-theme md-content,\n    .nr-dashboard-theme ui-card-panel,\n    md-content {\n        background-color: var(--bg-main) !important;\n        color: var(--text-main) !important;\n    }\n\n    /* Quita bordes blancos molestos */\n    md-card {\n        background-color: var(--bg-card) !important;\n        border-radius: 12px !important;\n        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;\n    }\n\n    /* =========================================\n        TITULO SUPERIOR\n   ========================================= */\n    .dashboard-header-custom {\n        background: linear-gradient(to bottom, #3b3b3b, #2d2d2d);\n        padding: 18px;\n        margin-bottom: 15px;\n        border-radius: 8px;\n        text-align: center;\n        border-bottom: 2px solid #1b1b1b;\n    }\n\n    .dashboard-header-custom h1 {\n        color: #ffffff;\n        font-size: 28px;\n        font-weight: 700;\n        margin: 0;\n        letter-spacing: 1.5px;\n        text-transform: uppercase;\n    }\n\n    /* =========================================\n         PANEL / TARJETA\n   ========================================= */\n    .panel {\n        background: var(--bg-panel);\n        padding: 18px;\n        border-radius: 12px;\n        margin-bottom: 20px;\n        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    }\n\n    .panel h2 {\n        font-size: 20px;\n        font-weight: 600;\n        color: var(--accent-blue);\n        margin-bottom: 12px;\n        letter-spacing: 1px;\n    }\n\n    /* =========================================\n         BOTÓN SET (MODERNO)\n   ========================================= */\n    .btn-set {\n        background: var(--accent-blue);\n        color: black !important;\n        padding: 8px 20px;\n        border-radius: 6px;\n        border: none;\n        font-weight: bold;\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);\n        transition: 0.2s;\n    }\n\n    .btn-set:hover {\n        background: #07c0ec;\n        transform: scale(1.05);\n    }\n\n    /* =========================================\n         LOG DE EVENTOS\n   ========================================= */\n    .event-log {\n        background: #111;\n        padding: 12px;\n        border-radius: 8px;\n        color: var(--accent-orange);\n        font-family: Consolas, monospace;\n        font-size: 14px;\n        height: 180px;\n        overflow-y: auto;\n        border-left: 4px solid var(--accent-orange);\n    }\n\n    /* =========================================\n         ICONOS PARA GAUGES\n   ========================================= */\n    .sensor-title {\n        display: flex;\n        align-items: center;\n        gap: 10px;\n        font-size: 19px;\n        color: var(--text-main);\n    }\n\n    .sensor-title i {\n        font-size: 22px;\n        opacity: 0.8;\n    }\n</style>\n\n<!-- HEADER -->\n<div class=\"dashboard-header-custom\">\n    <h1>Sistema de Monitoreo y Control VFD</h1>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 220,
+        "y": 40,
+        "wires": [
+            [
+                "7d53bba3d92bf80b"
+            ]
+        ]
+    },
+    {
+        "id": "ui_group_cnc",
+        "type": "ui_group",
+        "name": "Sistema de Monitoreo y Control de un VFD",
+        "tab": "ui_tab_cnc",
+        "order": 2,
+        "disp": false,
+        "width": "26",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ui_tab_cnc",
+        "type": "ui_tab",
+        "name": "Sistema de Monitoreo y Control VFD",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "426a7346b68a7f99",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
